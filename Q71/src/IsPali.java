@@ -1,27 +1,27 @@
-// TODO Import the scanner object.
+// Import the scanner object.
 import java.util.Scanner;
 
 public class IsPali {
-    // TODO Create a new scanner object.
+    // Create a new scanner object.
     static Scanner sc = new Scanner(System.in);
     
     public static void main(String[] args) {
-        // TODO Declare the variables.
-        String str; // [x] -> The string that needs to be checked.
-        boolean isPal = true; // [x] -> A boolean value that represents if the string is a palindrome.
+        // Declare the variables.
+        String str; // -> The string that needs to be checked.
+        boolean isPal = true; // -> A boolean value that represents if the string is a palindrome.
 
-        // TODO Get input from user.
+        // Get input from user.
         System.out.println("Please enter a string: ");
         str = sc.nextLine();
 
-        // TODO Checking if each opposite letter is equal, by splitting the string.
-        for (int i = 0; i < str.length() / 2 && isPal; i++) {
+        // Checking if each opposite letter is equal, by splitting the string.
+        for (int i = 0; i <= str.length() / 2 && isPal; i++) {
             if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
                 isPal = false;
             }
         }
 
-        // TODO Print the result.
+        // Print the result.
         if (isPal) {
             System.out.println("The string " + str + " is a palindrome.");
         } else {

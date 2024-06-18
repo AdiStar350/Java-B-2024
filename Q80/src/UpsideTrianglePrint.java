@@ -1,19 +1,19 @@
-// TODO Import the Scanner class.
+// Import the Scanner class.
 import java.util.Scanner;
 
 public class UpsideTrianglePrint {
-    // TODO Create a new Scanner object.
+    // Create a new Scanner object.
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // TODO Declare the variables.
-        int limit; // [x] -> The limit for the triangle size.
+        // Declare the variables.
+        int limit; // -> The limit for the triangle size.
 
-        // TODO Get input from the user.
+        // Get input from the user.
         System.out.print("Please enter a number: ");
         limit = input.nextInt();
 
-        // TODO Print the triangle.
+        // Print the triangle.
         System.out.println();
 
         for (int i = limit; i > 0; i--) {
